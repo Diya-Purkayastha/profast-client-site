@@ -4,9 +4,9 @@ import ProfastLogo from './profast/profastLogo';
 
 const Navbar = () => {
     const links = <>
-        <li><NavLink>Home</NavLink></li>
-        <li><NavLink>About Us</NavLink></li>
-        <li><NavLink>Contact Us</NavLink></li>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/'>About Us</NavLink></li>
+        <li><NavLink to='/coverage'>Coverage</NavLink></li>
        
 
     </>

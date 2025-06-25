@@ -16,7 +16,7 @@ logo1, logo2, logo3, logo4, logo5, logo6, logo7
 
 const BrandLogos = () => {
   return (
-    <section className="py-12 bg-base-100">
+    <section className="py-12 bg-base-100 mt-28">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-2xl font-bold mb-8">We've helped thousands of sales teams</h2>
         <Swiper
