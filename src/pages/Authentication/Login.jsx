@@ -48,7 +48,7 @@ const Login = () => {
 
                         </fieldset>
                         <button className="btn btn-primary text-black mt-4">Login</button>
-                        <p ><small>New to this site?<Link to='/register' className='btn btn-link -ml-3'>Register</Link>
+                        <p ><small>New to this site?<Link state={from} to='/register' className='btn btn-link -ml-3'>Register</Link>
                         </small></p>
                        <SocialLogin></SocialLogin>
                     </form>

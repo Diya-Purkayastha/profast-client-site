@@ -13,6 +13,10 @@ import MyParcels from '../dashboard/MyParcels';
 import Payment from '../dashboard/Payment';
 import PaymentHistory from '../dashboard/PaymentHIstory';
 import TrackParcel from '../dashboard/TrackParcel';
+import BeARider from '../dashboard/BeARider';
+import PendingRiders from '../dashboard/PendingRiders';
+import ActiveRiders from '../dashboard/ActiveRiders';
+import MakeAdmin from '../dashboard/MakeAdmin';
 
 const Router = createBrowserRouter([
   {
@@ -26,6 +30,11 @@ const Router = createBrowserRouter([
         {
           path:'/coverage',
           Component: Coverage
+        },
+        {
+          path:'beARider',
+          element: <PrivateRoute><BeARider></BeARider></PrivateRoute>,
+             loader: () => fetch('../../public/serviceCentered.json')
         },
         {
           path:'sendParcel',
@@ -72,6 +81,18 @@ const Router = createBrowserRouter([
       {
         path: 'track',
         Component: TrackParcel
+      },
+      {
+        path: 'pending-riders',
+        Component: PendingRiders
+      },
+      {
+        path: 'active-riders',
+        Component: ActiveRiders
+      },
+      {
+        path: 'makeAdmin',
+        Component: MakeAdmin
       }
     ]
   }
